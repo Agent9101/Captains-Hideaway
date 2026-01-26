@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenny's Hideaway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #FFF; color: #0B1F33; }
+    header { background: #0B1F33; color: #FFF; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+    header a { color: #FFF; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('hero.jpg') center/cover no-repeat; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #FFF; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0; }
+    .hero p { font-size: 1.2rem; margin: 10px 0; }
+    .button { background: #F26A4B; color: #FFF; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 20px; text-align: center; }
+    .menu-preview, .gallery { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .menu-item, .gallery img { border-radius: 10px; overflow: hidden; }
+    .menu-item img { width: 100%; height: 150px; object-fit: cover; }
+    .menu-item h3 { margin: 10px 0 5px; }
+    .menu-item p { margin: 0; }
+    .contact { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    footer { background: #0B1F33; color: #FFF; text-align: center; padding: 20px; }
+    @media(max-width:768px){ .hero h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Lenny's Hideaway</h2>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Your Local Hideaway for Great Food & Drinks</h1>
+  <p>Cozy atmosphere | Delicious menu | Friendly service</p>
+  <a href="#menu" class="button">View Menu</a>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Lenny’s Hideaway is your neighborhood spot for fresh food, cold drinks, and a relaxed coastal vibe. Stop by for lunch, dinner, or drinks with friends — we make everyone feel at home.</p>
+</section>
+
+<section id="menu">
+  <h2>Menu Preview</h2>
+  <div class="menu-preview">
+    <div class="menu-item">
+      <img src="burger.jpg" alt="Burger">
+      <h3>Burgers & Sandwiches</h3>
+      <p>Juicy burgers and gourmet sandwiches served fresh daily.</p>
+    </div>
+    <div class="menu-item">
+      <img src="seafood.jpg" alt="Seafood">
+      <h3>Seafood Favorites</h3>
+      <p>Fresh catches prepared with our signature seasoning.</p>
+    </div>
+    <div class="menu-item">
+      <img src="drinks.jpg" alt="Drinks">
+      <h3>Drinks & Specials</h3>
+      <p>Craft beers, cocktails, and daily specials to enjoy.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="interior1.jpg" alt="Interior">
+    <img src="food1.jpg" alt="Food">
+    <img src="interior2.jpg" alt="Interior">
+    <img src="food2.jpg" alt="Food">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Cohasset, MA | 🕒 Mon–Sun: 11am–10pm | 📞 (781) XXX-XXXX</p>
+  <a href="https://goo.gl/maps/example" class="button" target="_blank">Get Directions</a>
+</section>
+
+<footer>
+  &copy; 2026 Lenny's Hideaway | Follow us on Instagram & Facebook
+</footer>
+
+</body>
+</html>
